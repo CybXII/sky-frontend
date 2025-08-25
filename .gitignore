@@ -1,0 +1,31 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/dist
+/build
+
+# misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# A temporary folder used by some Angular CLI commands
+.angular/
+# Personal workspace-local config (used by Angular Language Service)
+.vscode/
+
+# Log files
+log.txt
+*.log
