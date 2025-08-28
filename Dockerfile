@@ -1,14 +1,15 @@
-
-FROM node:20-slim as build
-
+# --- Build Stage ---
+FROM node:20-slim AS build
 WORKDIR /app
 
 COPY package.json package-lock.json ./
 RUN npm ci
 
 COPY . .
-RUN npm run build --configuration production
+# Wichtig: -- vor den Build-Flags
+RUN npm run build -- --configuration production
 
+# --- Runtime Stage ---
 FROM nginx:stable-alpine
 COPY --from=build /app/dist/sky-frontend /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
