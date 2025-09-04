@@ -2,6 +2,8 @@
 
 Dies ist das Frontend-Repository für das Sky L.A.D Projekt, entwickelt mit Angular.
 
+Für eine **allgemeine Projektübersicht, Architektur, CI/CD-Strategie und wichtige GitHub Secrets**, siehe die [Haupt-README.md](../README.md).
+
 ## Projektübersicht
 
 Dieses Repository enthält die Benutzeroberfläche des Sky L.A.D-Systems. Es ist als Single-Page Application (SPA) konzipiert, die über REST-APIs mit dem `sky-backend` kommuniziert.
@@ -13,7 +15,7 @@ Dieses Repository enthält die Benutzeroberfläche des Sky L.A.D-Systems. Es ist
 *   **Build-Tool:** Angular CLI
 *   **Paketmanager:** npm
 
-## Entwicklung
+## Lokale Entwicklung
 
 ### Installation
 
@@ -22,7 +24,7 @@ Dieses Repository enthält die Benutzeroberfläche des Sky L.A.D-Systems. Es ist
 npm install
 ```
 
-### Lokale Entwicklung
+### Starten des Entwicklungsservers
 
 ```bash
 # Startet den Entwicklungsserver
@@ -53,9 +55,4 @@ Erstellt die produktionsbereiten Artefakte im Verzeichnis `dist/sky-frontend`.
 
 ## CI/CD
 
-Siehe [`sky-frontend/.github/workflows/ci.yml`](.github/workflows/ci.yml) für Details zum Build-, Test- und Deployment-Workflow.
-
-## Verwandte Repositories
-
-*   [sky-backend](https://github.com/yourgithub/sky-backend) (Bitte URL anpassen)
-*   [sky-infra](https://github.com/yourgithub/sky-infra) (Bitte URL anpassen)
+Details zum Build-, Test- und Deployment-Workflow finden Sie in der [Haupt-README.md](../README.md) und [`sky-frontend/.github/workflows/ci.yml`](.github/workflows/ci.yml).
