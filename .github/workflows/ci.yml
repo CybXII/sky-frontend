@@ -23,7 +23,7 @@ jobs:
       - run: npm run lint
       - run: npm run test -- --watch=false --browsers=ChromeHeadless
 
-      # Contract check: lade OpenAPI vom letzten Backend-Artifact (einfacher Weg)
+      # Contract check: lade OpenAPI vom letzten Backend-Artifact
       - name: Download OpenAPI (from backend artifact)
         uses: dawidd6/action-download-artifact@v3
         with:
@@ -68,7 +68,7 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.REPO_DISPATCH_TOKEN }}
-          repository: ${{ github.repository_owner }}/sky-infra # Passe dies an dein infra repo an!
+          repository: ${{ github.repository_owner }}/sky-infra # Passe dies an dein repo an!
           event-type: frontend-image-updated
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "image_tag": "${{ env.TAG }}", "environment": "development"}'
 

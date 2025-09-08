@@ -1,8 +1,6 @@
 # Sky Frontend (Angular)
 
-Dies ist das Frontend-Repository für das Sky L.A.D Projekt, entwickelt mit Angular.
-
-Für eine **allgemeine Projektübersicht, Architektur, CI/CD-Strategie und wichtige GitHub Secrets**, siehe die [Haupt-README.md](../README.md).
+Dies ist das Frontend-Repository für das Sky L.A.D Projekt, soll als Grundgerüst für zukunftige Angular Frontend Applikations dienen.
 
 ## Projektübersicht
 
@@ -55,4 +53,4 @@ Erstellt die produktionsbereiten Artefakte im Verzeichnis `dist/sky-frontend`.
 
 ## CI/CD
 
-Details zum Build-, Test- und Deployment-Workflow finden Sie in der [Haupt-README.md](../README.md) und [`sky-frontend/.github/workflows/ci.yml`](.github/workflows/ci.yml).
+Details zum Build-, Test- und Deployment-Workflow finden Sie in der [`sky-frontend/.github/workflows/ci.yml`](.github/workflows/ci.yml).
